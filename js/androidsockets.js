@@ -154,4 +154,4 @@ function insertWebSocketShim() {
 
 // TODO : Checks
 
-WebSocket = typeof WebSocket === "undefined" && AndroidWebSocket ? insertWebSocketShim() : WebSocket;
+WebSocket = typeof WebSocket === "undefined"? insertWebSocketShim() : WebSocket;
